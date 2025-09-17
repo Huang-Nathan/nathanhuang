@@ -1,0 +1,679 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0;
+    outline: 0;
+    font-family: "微软雅黑", serif;
+    scroll-behavior: smooth;
+    user-select: none;
+    --darkgreen: #81B4A9;
+    --lightgreen:#F0F3F0;
+    --plainwhite: #F6EEC9;
+    --redcolor: rgb(211, 16, 26);
+}
+
+body{
+    background-color: var(--lightgreen);
+}
+
+/* ================= header ==================== */
+/* #region header */
+header{
+    height: 90px;
+}
+
+.header_section{
+    display: flex;
+    height: 100%;
+}
+
+.logo{
+    width: 20%;
+    align-content: center;
+}
+
+.logo_text{
+    text-align: center;
+}
+
+.logo_text a{
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.menu{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    color: black;
+
+}
+
+.nav_bar_name{
+    height: 100%;
+    position: relative;
+}
+
+
+.nav_bar_name a{
+    display: block;
+    height: 100%;
+    align-content: center;
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.nav_bar_name a::after{
+    content: "";
+    display: block;
+    background-color: rgb(211, 16, 26);
+    width: 0;
+    height: 2px;
+    transition: all 0.5s ease;
+}
+
+.nav_bar_name a:hover{
+    font-size: 1.2rem;
+}
+.nav_bar_name a:hover::after{
+    width: 100%;
+}
+
+
+.main_pic{
+    min-height: 80vh;
+    display: flex;
+}
+
+.portrait{
+    padding-left: 100px;
+    width: 40%;
+    height: 100%;
+}
+
+.portrait img{
+    width: 80%;
+}
+
+/* #endregion */
+
+
+
+/* =================== My personal Introduction ====================================== */
+/* #region Personal Intro */
+
+
+.personal_info{
+    display: block;
+    width: 60%;
+}
+
+.effect{
+    padding-top: 1rem;
+    width: 70%;
+    margin: auto;
+    height: 100%;
+}
+
+.intro, .action_button{
+    display: flex;
+    justify-content: center;
+}
+
+.intro p{
+    line-height: 1.41;
+    font-size: 15px;
+}
+
+.name{
+    height: 20%;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+}
+
+.name p{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.name span{
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.intro{
+    height: 20%;
+}
+
+.action_button{
+    display: flex;
+  align-items: center; 
+  justify-content: center; 
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.action_button a{
+    cursor: pointer;
+    background-color: var(--darkgreen);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 25px;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn_text{
+    display: inline-block;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.action_button a:hover .btn_text{
+    transform: scale(1.05);
+}
+
+.social_icon .frame{
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+
+.frame a{
+    width: 25%;
+    color: black;
+    font-size: 1.7rem;
+}
+
+
+.schedule_table{
+    height: 35%;
+    width: 70%;
+    margin: auto;
+}
+
+.time_table_title p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.table_effect{
+    display: block;
+    height: 17%;
+    transition: all 1s ease;
+}
+
+.time_table_items{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.table_effect:nth-child(even){
+    background-color: var(--darkgreen);
+    border-width: 2px;
+    border-radius: 5px;
+    color: white;
+}
+
+.time_table_items span{
+    /* cursor: pointer; */
+    width: 30%;
+    text-align: center;
+    transition: all 0.8s ease;
+}
+
+.time_table_items img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+.time_table_items p{
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    transition: all 0.8s ease;
+    font-size: 15px;
+}
+
+
+/* 
+.time_table_items:hover span,
+.time_table_items:hover p{
+    font-size: 1.2rem;
+} */
+
+/* #endregion */
+
+
+/* =============== Projects ==================*/
+/* #region Projects */
+
+.projects_ref{
+    height:400px;
+}
+
+.projects_ref .projects_title{
+    height: 20%;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.projects_title h3{
+    font-size: 3rem;
+    padding-left:1rem ;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .card_container{
+    height: 100%;
+}
+
+.card_container .card_content{
+    height: 100%;
+}
+
+.card_content{
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card_article{
+    cursor: pointer;
+    
+}
+
+.card_img{
+    width: 100%;
+}
+
+.card_image{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card_image::before{
+    content: "";
+    position: absolute;
+    background-color:rgba(0,0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    bottom : 0;
+    left: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 0.3s all ease;
+    z-index: 2;
+    
+}
+
+.card_image:hover::before{
+    opacity: 1;
+    transform:scaleY(1) ;
+
+}
+
+.card_name{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    z-index: 10;
+    color: var(--redcolor);
+}
+
+.card_description{
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    color: white;
+}
+
+.more_info{
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background-color: black;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 1s ease;
+    text-align: center;
+    justify-content: center;
+    line-height: 1.5rem;
+    z-index: 3;
+}
+
+.more_info:hover{
+    font-size: 1.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    background-color: white;
+    color: black;
+}
+
+
+/* #endregion */
+
+.system_working{
+    height: 400px;
+}
+
+.system_title{
+    font-size: 3rem;
+    height: 20%;
+    align-items: center;
+}
+
+.container{
+    height: 80%;
+}
+
+iframe{
+    width: 720px;
+    height: 100%;
+
+}
+
+
+.footer_container{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+
+.footer_container .left{
+    width: 30%;
+    align-content: center;
+    padding-left: 15px;
+}
+
+.left .footer_logo_text{
+    font-size: 2.5rem;
+}
+
+.footer_logo_text a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer_container .right{
+    width: 70%;
+}
+
+.right .site_map{
+    display: flex;
+    width: 100%;
+}
+
+.site_map ul{
+    width: 33%;
+    display: flex;
+    align-content: center;
+}
+
+.site_map ul a{
+    display: block;
+}
+
+
+
+/* #region responsive 768px*/
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display:none;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .main_pic {
+      flex-direction: column;
+      padding: center;
+      min-height: 0vh;
+    }
+
+    .portrait{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .portrait img{
+        width: 50%;
+        /* margin: auto; */
+    }
+
+
+    .personal_info {
+      width: 60%;
+      padding-left: 0;
+    }
+
+    .personal_info{
+        width: 100%;
+        text-align: center;
+    }
+
+    .effect {
+      width: 90%;
+      padding-top: 1rem;
+      /* margin: auto; */
+    }
+
+    .effect .schedule_table{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .schedule_table .table_effect{
+        width: 80%;
+        margin: auto;
+    }
+
+    .name p{
+        font-size: 2rem;
+    }
+
+    .intro p{
+        display: none;
+    }
+
+    .time_table_items p,
+    .time_table_items span{
+        font-size: 12px;
+    }
+
+    .action_button button{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .booking{
+        margin-top: 10px;
+    }
+
+    .social_icon .frame {
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .projects_ref{
+        padding-top: 1rem;
+        min-height: auto;
+    }
+
+    .card_article {
+      width: 85vw;
+    }
+
+    .card_img{
+        width: 100%;
+    }
+
+    iframe {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9;
+    }
+
+    .projects_title h3{
+        font-size: 30px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .system_working{
+        min-height: auto;
+    }
+
+    .system_title h3{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    
+    .container{
+        align-items: start;
+        padding: 0 10px;
+    }
+  }
+
+  /* #endregion  */
+
+
+
+  /* #region responsive 1024px */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .menu{
+        width: 80%;
+    }
+    .menu ul{
+        width: 40%;
+    }
+    .main_pic{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+    .portrait {
+      padding: 0;
+      width: 40%;
+      text-align: center;
+    }
+  
+    .portrait img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 0.5rem;
+    }
+  
+    .personal_info {
+      width: 90%;
+      min-width: 700px;
+      text-align: center;
+    }
+  
+    .effect {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      padding-top: 0;
+    }
+
+    .name p{
+        font-size: 2rem;
+    }
+
+    .name span{
+        font-size: 1rem;
+    }
+
+    .intro p{
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+    }
+  
+    .schedule_table {
+      width: 100%;
+    }
+
+    .time_table_items span,
+    .time_table_items p{
+        font-size: 13px;
+    }
+
+    .booking .link a {
+        font-size: 14px;
+      }
+
+    .action_button{
+        padding-top: 0.5rem;
+    }
+  
+    .action_button button {
+        min-width: 320px;
+      font-size: 18px;
+      padding: 10px 20px;
+      width: 100%;
+      margin: auto;
+    }
+  
+    .card_article {
+      width: 300px; /* 稍微放大，swiper显示两张时更协调 */
+    }
+  
+    .card_img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  
+    .social_icon .frame {
+      width: 60%;
+      margin: auto;
+      justify-content: space-around;
+    }
+
+    .projects_title h3{
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+
+  }
+  /* #endregion */
